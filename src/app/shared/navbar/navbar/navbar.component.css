@@ -1,0 +1,14 @@
+.white {
+  color: white;
+}
+
+.pad {
+  padding: 0 5vw;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+
+.btn-menu {
+  border: none;
+}

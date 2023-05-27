@@ -7,20 +7,29 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileComponent } from './modules/profile/profile/profile.component';
 import { PokemonComponent } from './modules/pokemon/pokemon/pokemon.component';
 import { PokedexComponent } from './modules/pokedex/pokedex/pokedex.component';
+import { NavbarComponent } from './shared/navbar/navbar/navbar.component';
+import { FooterComponent } from './shared/footer/footer/footer.component';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     PokemonComponent,
-    PokedexComponent
+    PokedexComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
